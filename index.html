@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<!-- saved from url=(0084)file:///C:/Users/OS6069/Downloads/awesome-open-source-games-main/shreyaspanchal.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Python Exam Cheat Sheet</title>
     <style>
@@ -26,101 +26,7 @@
         }
     </script>
 
-    <div id="code-sections"><div class="code-container"><h2>1. Triangle Pattern</h2>
-                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                <pre><code>n = 5
-for i in range(1, n+1):
-    print('*' * i)</code></pre></div><div class="code-container"><h2>2. Even or Odd</h2>
-                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                <pre><code>num = int(input('Enter a number: '))
-print('Even' if num % 2 == 0 else 'Odd')</code></pre></div><div class="code-container"><h2>3. Identify Character Type</h2>
-                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                <pre><code>ch = input('Enter a character: ')
-if ch.isdigit():
-    print('Digit')
-elif ch.islower():
-    print('Lowercase')
-elif ch.isupper():
-    print('Uppercase')
-else:
-    print('Special Character')</code></pre></div><div class="code-container"><h2>4. Multiplication Table</h2>
-                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                <pre><code>num = int(input('Enter a number: '))
-for i in range(1, 11):
-    print(f'{num} x {i} = {num * i}')</code></pre></div><div class="code-container"><h2>5. Fibonacci Sequence</h2>
-                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                <pre><code>a, b = 0, 1
-while b &lt; 50:
-    print(b, end=' ')
-    a, b = b, a + b</code></pre></div><div class="code-container"><h2>6. Factorial of N</h2>
-                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                <pre><code>def factorial(n):
-    return 1 if n == 0 else n * factorial(n-1)
-n = int(input('Enter a number: '))
-print('Factorial:', factorial(n))</code></pre></div><div class="code-container"><h2>7. Prime Number Check</h2>
-                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                <pre><code>def is_prime(n):
-    if n &lt; 2: return False
-    for i in range(2, int(n ** 0.5) + 1):
-        if n % i == 0:
-            return False
-    return True
-num = int(input('Enter a number: '))
-print('Prime' if is_prime(num) else 'Not Prime')</code></pre></div><div class="code-container"><h2>8. Simple Calculator</h2>
-                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                <pre><code>def calculator():
-    num1 = float(input('Enter first number: '))
-    op = input('Enter operator (+, -, *, /): ')
-    num2 = float(input('Enter second number: '))
-    if op == '+': print(num1 + num2)
-    elif op == '-': print(num1 - num2)
-    elif op == '*': print(num1 * num2)
-    elif op == '/': print(num1 / num2)
-    else: print('Invalid operator')
-calculator()</code></pre></div><div class="code-container"><h2>9. Task List Manager</h2>
-                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                <pre><code>tasks = []
-def add_task(task): tasks.append(task)
-def remove_task(task): tasks.remove(task)
-def show_tasks(): print('
-'.join(tasks))
-add_task('Complete assignment')
-add_task('Study for exam')
-remove_task('Complete assignment')
-show_tasks()</code></pre></div><div class="code-container"><h2>10. Set Operations</h2>
-                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                <pre><code>set1 = {1, 2, 3}
-set2 = {3, 4, 5}
-print('Union:', set1 | set2)
-print('Intersection:', set1 &amp; set2)
-print('Difference:', set1 - set2)</code></pre></div><div class="code-container"><h2>11. Student Records Dictionary</h2>
-                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                <pre><code>students = {'Alice': {'Grade': 'A', 'Attendance': 90}, 'Bob': {'Grade': 'B', 'Attendance': 85}}
-students['Charlie'] = {'Grade': 'A', 'Attendance': 95}
-print(students)</code></pre></div><div class="code-container"><h2>12. Personalized Greeting</h2>
-                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                <pre><code>name = input('Enter your name: ')
-print(f'Hello, {name}! Welcome!')</code></pre></div><div class="code-container"><h2>13. Area Calculator</h2>
-                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                <pre><code>import math
-def circle_area(r): return math.pi * r * r
-def rect_area(l, w): return l * w
-def tri_area(b, h): return 0.5 * b * h
-print(circle_area(5))</code></pre></div><div class="code-container"><h2>14. Unit Converter</h2>
-                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                <pre><code>def rupees_to_dollars(rupees): return rupees / 75
-def celsius_to_fahrenheit(c): return (c * 9/5) + 32
-print(rupees_to_dollars(1000))</code></pre></div><div class="code-container"><h2>15. Gross Salary Calculator</h2>
-                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                <pre><code>BS = float(input('Enter Basic Salary: '))
-DA, TA, HRA = 0.7*BS, 0.3*BS, 0.1*BS
-print('Gross Salary:', BS + DA + TA + HRA)</code></pre></div><div class="code-container"><h2>16. Simple Interest Calculator</h2>
-                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                <pre><code>P, R, T = map(float, input('Enter Principal, Rate, Time: ').split())
-print('Simple Interest:', (P * R * T) / 100)</code></pre></div><div class="code-container"><h2>17. Arithmetic Operations</h2>
-                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                <pre><code>a, b = map(int, input('Enter two numbers: ').split())
-print(f'Addition: {a + b}, Subtraction: {a - b}, Multiplication: {a * b}, Division: {a / b}, Modulus: {a % b}')</code></pre></div></div>
+    <div id="code-sections"></div>
     
     <script>
         const codes = [
@@ -153,6 +59,5 @@ print(f'Addition: {a + b}, Subtraction: {a - b}, Multiplication: {a * b}, Divisi
             container.appendChild(section);
         });
     </script>
-
-
-</body></html>
+</body>
+</html>
